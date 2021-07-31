@@ -12,4 +12,10 @@ Day Saturday : 31-July-201
 
 git commit -m "Created controllers and entity package with testController and User entity in them"
 
+
+	--> Copied full project of spring boot chat app from github of websocket and implented in the project
+	--> Now chat room is created which is working .
+
+git commit -m "Copied full project of spring boot chat app from github of websocket and implented in the project"
+
 +----------------------------------------------------------------------------------------------------------------+
