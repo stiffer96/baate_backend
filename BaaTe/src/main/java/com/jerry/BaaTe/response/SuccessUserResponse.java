@@ -1,0 +1,52 @@
+package com.jerry.BaaTe.response;
+
+import java.util.List;
+
+import com.jerry.BaaTe.entity.User;
+
+
+public class SuccessUserResponse  {
+	
+	private int code;
+	private int count;
+	private List<User> result;
+	
+	public SuccessUserResponse() {
+		
+	}
+
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	
+	public List<User> getResult() {
+		return result;
+	}
+
+	public void setResult(List<User> result) {
+		this.result = result;
+	}
+
+	
+
+	
+
+	
+	
+	
+	
+	
+}

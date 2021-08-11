@@ -11,15 +11,18 @@ import com.jerry.BaaTe.entity.ChatMessage;
 @Controller
 public class ChatController {
 	@MessageMapping("/chat.register")
-	@SendTo("/topic/public")
+	@SendTo("/public/room")
 	public ChatMessage register(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
 		headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
 		return chatMessage;
 	}
 
 	@MessageMapping("/chat.send")
-	@SendTo("/topic/public")
+	@SendTo("/public/room")
 	public ChatMessage sendMessage(@Payload ChatMessage chatMessage) {
 		return chatMessage;
 	}
+	
+
+	
 }
